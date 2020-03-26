@@ -2,6 +2,7 @@ from flask import Flask
 from flask_restful import Api
 from model import db
 from flask_restful_swagger import swagger
+from flask_migrate import Migrate
 from healthcheck import HealthCheck
 from common.request_logger import start_timer, log_request
 from resources.product_list import ProductListResource
@@ -13,6 +14,7 @@ app.config.from_object('config')
 api = Api(app)
 api = swagger.docs(Api(app), apiVersion='1', api_spec_url='/docs')
 db.init_app(app)
+migrate = Migrate(app, db)
 
 # init healthcheck
 health = HealthCheck(app, '/health')
