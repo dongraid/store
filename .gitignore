@@ -1,2 +1,6 @@
 .idea
 venv
+app_log.json
+*.db
+.coverage
+__pycache__
