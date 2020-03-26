@@ -1,4 +1,6 @@
-To install application please make following steps:
+# **Store API**
+
+#### To install application please make the following steps:
 
 Clone a project to your machine and go inside directory.
 
@@ -16,9 +18,9 @@ Clone a project to your machine and go inside directory.
 
 **Initialize database and migrations**
 
-`flask db init
- flask db migrate 
- flask db upgrade`
+    flask db init
+    flask db migrate
+    flask db upgrade
 
 **To run an application**
 
