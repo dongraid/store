@@ -29,3 +29,7 @@ Clone a project to your machine and go inside directory.
 **To run unittests**
 
 `python -m unittest tests/test*.py`
+
+**To open swagger ui please open**
+
+`/docs.html`
