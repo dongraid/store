@@ -33,3 +33,7 @@ Clone a project to your machine and go inside directory.
 **To open swagger ui please open**
 
 `/docs.html`
+
+**To see healtcheck**
+
+`/health`
